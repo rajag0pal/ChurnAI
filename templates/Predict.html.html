@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale = 1.0">
+    <title>
+    Prediction
+
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+
+        <video autoplay loop muted plays-inline class="back-videoprediction">
+            <source src="{{url_for('static', filename='modelvideo.mp4')}}" type="video/mp4">
+        </video>
+
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href ="index.html">HOME</a></li>
+                    <li><a href ="About.html.html">MODEL</a></li>
+                    <li><a href ="Data.html.html">DATA</a></li>
+                    <li><a href ="Features.html.html">FEATURES</a></li>
+                    <li><a href ="Stat.html.html">STATISTICS</a></li>
+
+                </ul>
+                </div>
+            </nav>
+
+        <div class="text-boxpred">
+            <h1>Predict your Customer Class here</h1>
+            <p>Fill the values to predict the class of your Customer</p>
+
+            <form action="{{url_for('predict')}}" method ="post">
+                <input type="text" name="CreditScore" placeholder="Credit Score" required="required"/>
+                <input type="text" name="Gender" placeholder="Gender (Male : 1, Female:0)" required="required"/>
+                <input type="text" name="Age" placeholder="Age" required="required"/>
+                <input type="text" name="Tenure" placeholder="Tenure" required="required"/>
+                <input type="text" name="Balance" placeholder="Balance" required="required"/>
+                <input type="text" name="HasCrCard" placeholder="Having Cr.Crad (yes:1, no:0)" required="required"/>
+                <input type="text" name="IsActiveMember" placeholder="Active Member? (yes:1, no:0)" required="required"/>
+                <input type="text" name="EstimatedSalary" placeholder="Salary" required="required"/>
+                <input type="text" name="NumOfProducts_1" placeholder="One Bank Product? (yes:1, no:0)" required="required"/>
+                <input type="text" name="NumOfProducts_2" placeholder="Two Bank Products? (yes:1, no:0)" required="required"/>
+                <input type="text" name="NumOfProducts_3" placeholder="Three Bank Products? (yes:1, no:0)" required="required"/>
+                <input type="text" name="NumOfProducts_4" placeholder="Four Bank Products? (yes:1, no:0)" required="required"/>
+                <input type="text" name="Geography_0" placeholder="Are you from France? (yes:1, no:0)" required="required"/>
+                <input type="text" name="Geography_1" placeholder="Are you from Germany? (yes:1, no:0)" required="required"/>
+                <input type="text" name="Geography_3" placeholder="Are you from Spain? (yes:1, no:0)" required="required"/>
+                <br>
+                <br>
+                <button type="submit" class="hero-btn2">Predict</button>
+            </form>
+
+            <br>
+            <br>
+            <br>
+
+            {{ predict_text }}
+            <br>
+            <br>
+            {{ sug_text }} <a class="sug" href="Stat.html.html"> Statistics</a>
+
+
+        </div>
+
+    </section>
+
+    <section class="About">
+        <h1>About</h1>
+        <p>A Complete Machine Learning approach to classify Bank Customers based on the class "Churn". </p>
+        <h2>Tools and Packages Used</h2>
+        <nav>
+            <a  href="index.html"><img class="logos" src="{{url_for('static', filename='TF.png')}}"><img class="logos" src="{{url_for('static', filename='scikit.png')}}"><img class="logos" src="{{url_for('static', filename='numpy.png')}}"><img class="logos"  src="{{url_for('static', filename='pandas.png')}}"><img class="logos" src="{{url_for('static', filename='python.png')}}"><img class="logos" src="{{url_for('static', filename='seaborn.png')}}"><img class="logos" src="{{url_for('static', filename='matplotlib.png')}}"><img class="logos" src="{{url_for('static', filename='keras.png')}}"><img class="logos" src="{{url_for('static', filename='Power BI.png')}}"><img class="logos" src="{{url_for('static', filename='ide.png')}}"></a>
+        </nav>
+    </section>
+
+
+</body>
+</html>

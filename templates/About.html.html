@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale = 1.0"> 
+    <title>
+    Model
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header">
+
+        
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href ="index.html">HOME</a></li>
+                    <li><a href ="About.html.html">MODEL</a></li>
+                    <li><a href ="Data.html.html">DATA</a></li>
+                    <li><a href ="Features.html.html">FEATURES</a></li>
+                    <li><a href ="Stat.html.html">STATISTICS</a></li>
+                 
+                </ul>
+                </div>
+            </nav>
+        <h1>MODEL</h1>
+        
+    </section>
+    <section class='info'>
+        <h1 class = 'Info'>
+            Info    
+        </h1>  
+        <p class='Description'>This is a Classification Model which has been Built using Keras framework from Tensorflow Library. The Model uses Sequential API from Tensorflow and has several Dense Layers. It has totally 139,777 trainable paramteres, from which 8192 params are in Layer 1, and 131328 params are in Layer 2. The model predicts the class of the customers based on the given features like CreditScore, Geography, Balance etc. The Prediction accuracy of the model is found to be 86%, which is a good result.<p>
+        <h1 class="Seq">
+              <a>Sequential Model</a>
+        </h1>
+        <nav >
+            <a class='neurons' href="index.html"><img src="{{url_for('static', filename='firing neurons.gif')}}"></a>>
+        </nav>
+        <h1 class ='Activation'>
+              <a>Activation Functions Used & Confusion Matrix, Report</a>
+        </h1>
+
+
+        <nav >
+            <a class='actlogos' href="index.html"><img src="{{url_for('static', filename='SIGMOID.png')}}"><img src="{{url_for('static', filename='RELU.png')}}"><img src="{{url_for('static', filename='cmatrix.png')}}"><img src="{{url_for('static', filename='report.png')}}"></a>>
+        </nav>
+    </section>
+    
+    
+    
+</body>
+</html>

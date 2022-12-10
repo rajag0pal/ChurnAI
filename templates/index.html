@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale = 1.0"> 
+    <title>
+    Churn Predictor
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="{{url_for('static', filename='bankvideo.mp4')}}" type="video/mp4">
+        </video>
+        
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href ="index.html">HOME</a></li>
+                    <li><a href ="About.html.html">MODEL</a></li>
+                    <li><a href ="Data.html.html">DATA</a></li>
+                    <li><a href ="Features.html.html">FEATURES</a></li>
+                    <li><a href ="Stat.html.html">STATISTICS</a></li>
+                 
+                </ul>
+                </div>
+            </nav>
+    
+        <div class="text-box">
+            <h1>ML Based Churn Prediction</h1>
+            <p>A Supervised Machine learning Model to classify Bank Customers based on the target class "Churn"</p>
+            <a href="Predict.html.html" class="hero-btn">Predict</a>
+            
+        </div>
+        
+    </section>
+    
+    <section class="About">
+        <h1>About</h1>
+        <p>A Complete Machine Learning approach to classify Bank Customers based on the class "Churn". </p>
+        <h2>Tools and Packages Used</h2>
+        <nav>
+            <a  href="index.html"><img class="logos" src="{{url_for('static', filename='TF.png')}}"><img class="logos" src="{{url_for('static', filename='scikit.png')}}"><img class="logos" src="{{url_for('static', filename='numpy.png')}}"><img class="logos"  src="{{url_for('static', filename='pandas.png')}}"><img class="logos" src="{{url_for('static', filename='python.png')}}"><img class="logos" src="{{url_for('static', filename='seaborn.png')}}"><img class="logos" src="{{url_for('static', filename='matplotlib.png')}}"><img class="logos" src="{{url_for('static', filename='keras.png')}}"><img class="logos" src="{{url_for('static', filename='Power BI.png')}}"><img class="logos" src="{{url_for('static', filename='ide.png')}}"><img class="logos" src="{{url_for('static', filename='flask.png')}}"></a>
+        </nav>
+    </section>
+    
+    
+</body>
+</html>

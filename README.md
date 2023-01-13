@@ -1,4 +1,4 @@
-#Bank Customer Churn prediction using deeplearning
+# Bank Customer Churn prediction using deeplearning
 
 The central idea of this project is to develop a web application that collects input from the user and
 can show the probability of churn for the data given by the user as an input. This project has been done with

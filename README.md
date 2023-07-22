@@ -1,4 +1,4 @@
-# Bank Customer Churn prediction using deeplearning
+# ML-based web application for predicting Bank customer Churn using Deep Learning,
 
 ## Description
 The central idea of this project is to develop a web application that collects input from the user and

@@ -56,3 +56,10 @@ the data given by a user
   - SETTING UP ALL FILES
   - CREATING A FRONT END USING HTML AND CSS
   - USING FLASK TO CREATE A WEB APPLICATION
+
+## Application Overview
+https://github.com/rajag0pal/ChurnAI/assets/80576855/82610c4a-a652-4e9a-96df-832a93c7365c
+
+## PowerBI Dashboard
+https://github.com/rajag0pal/ChurnAI/assets/80576855/a696a064-145a-4f31-b8c5-824b3176eaf4
+

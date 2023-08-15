@@ -1,4 +1,13 @@
-# ML-based web application for predicting Bank customer Churn using Deep Learning,
+# ML-based web application for predicting Bank customer Churn using Deep Learning
+![Static Badge](https://img.shields.io/badge/python-3-grey?logo=python)
+![Static Badge](https://img.shields.io/badge/jupyter_notebook-grey?logo=jupyter)
+![Static Badge](https://img.shields.io/badge/PowerBI-grey?logo=powerbi)
+![Static Badge](https://img.shields.io/badge/flask-grey?logo=flask)
+![Static Badge](https://img.shields.io/badge/html-grey?logo=html5)
+![Static Badge](https://img.shields.io/badge/css-grey?logo=css3)
+![Static Badge](https://img.shields.io/badge/tensorflow-2-grey?logo=tensorflow)
+
+
 
 ## Description
 The central idea of this project is to develop a web application that collects input from the user and
@@ -19,25 +28,31 @@ the data given by a user
 
 ## Table of Contents
 
-DATA PART:
+- DATA PART:
 
-DATA IMPORTING
-DATA PREPROCESSING & CLEANING
-EXPLORATORY DATA ANALYSIS
-FEATURE TRANSFORMATION AND ENCODING
-VISUALIZATIONS:
+  - DATA IMPORTING
+  - DATA PREPROCESSING & CLEANING
+  - EXPLORATORY DATA ANALYSIS
+  - FEATURE TRANSFORMATION AND ENCODING
 
-FINDING RELATIONS BETWEEN FEATURES
-ANAMOLY DETECTION
-MODEL BUILDING:
+- VISUALIZATIONS:
 
-TRAIN TEST SPLIT
-CREATING A NEURAL NETWORK USING SEQUENTIAL API FROM KERAS
-TRAINING AND TESTING
-VALIDATION: CONFUSION MATRIX, ACCURACY
-MODEL DEPLOYMENT:
+  - FINDING RELATIONS BETWEEN FEATURES
+  - ANAMOLY DETECTION
 
-SAVING THE MODEL
-SETTING UP ALL FILES
-CREATING A FRONT END USING HTML AND CSS
-USING FLASK TO CREATE A WEB APPLICATION
+- MODEL BUILDING:
+
+  - TRAIN TEST SPLIT
+  - CREATING A NEURAL NETWORK USING SEQUENTIAL API FROM KERAS
+  - TRAINING AND TESTING
+
+- VALIDATION:
+
+  - CONFUSION MATRIX, ACCURACY
+
+- MODEL DEPLOYMENT:
+
+  - SAVING THE MODEL
+  - SETTING UP ALL FILES
+  - CREATING A FRONT END USING HTML AND CSS
+  - USING FLASK TO CREATE A WEB APPLICATION
